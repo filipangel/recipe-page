@@ -43,13 +43,14 @@ p, li {
 
 .recipe h2 {
     font-family: "Young Serif", sans-serif;
+    font-weight: 400;
     font-size: 3.0rem;
     color: var(--clr-brown-800);
 }
 
 .container {
     padding-inline: 15rem;
-    margin: 9rem auto 0;
+    margin: 9rem auto 9rem;
 }
 
 .recipe {
@@ -76,6 +77,7 @@ p, li {
     font-family: "Young Serif", sans-serif;
     font-size: 4.0rem;
     margin-top: 4.0rem;
+    font-weight: 400;
     color: var(--clr-stone-900);
 }
 
@@ -87,10 +89,12 @@ p, li {
     background-color: var(--clr-rose-50);
     border-radius: 2.0rem;
     padding: 2.0rem;
+    margin: 2.0rem 0;
 }
 
 .recipe .recipe-preparation-time h3 {
     color: var(--clr-rose-800);
+    padding-bottom: 1.0rem;
 }
 
 .recipe .recipe-preparation-time ul {
@@ -98,7 +102,82 @@ p, li {
     padding-left: 2.0rem;
 }
 
-li::marker {
+.recipe .recipe-preparation-time li {
+    padding: 0.8rem 0 0.5rem 2.0rem;
+}
+
+.recipe .recipe-preparation-time li::marker {
     color: var(--clr-rose-800);
     font-size: 1.2rem;
+}
+
+.recipe-ingredients h2 {
+    padding-bottom: 1.0rem;
+}
+
+.recipe-ingredients ul {
+    padding-left: 2.0rem;
+    padding-bottom: 3.0rem;
+    margin-bottom: 2.0rem;
+    border-bottom: solid var(--clr-stone-150) 1px;
+}
+
+.recipe-ingredients li {
+    padding: 0.8rem 0 0.5rem 2.0rem;
+}
+
+.recipe .recipe-ingredients li::marker {
+    color: var(--clr-brown-800);
+    font-size: 1.2rem;
+}
+
+.recipe-instructions h2 {
+    padding-bottom: 1.0rem;
+}
+
+.recipe-instructions ol {
+    padding-left: 2.5rem;
+    padding-right: 2.0rem;
+    padding-bottom: 3.0rem;
+    margin-bottom: 2.0rem;
+    border-bottom: solid var(--clr-stone-150) 1px;
+}
+
+.recipe-instructions li {
+    padding: 0.8rem 0 0.5rem 2.0rem;
+}
+
+.recipe-instructions li::marker {
+    color: var(--clr-brown-800);
+    font-weight: 700;
+}
+
+.recipe-nutrition h2 {
+    padding-bottom: 1.0rem;
+}
+
+.recipe-nutrition p {
+    padding-bottom: 1.0rem;
+}
+
+.recipe-nutrition table {
+    width: 100%;
+}
+
+.recipe-nutrition th {
+    color: var(--clr-brown-800);
+    font-weight: var(--fw-bold);
+    border-bottom: solid var(--clr-stone-150) 1px;
+    padding: 1.0rem;
+}
+
+.recipe-nutrition #last {
+    border-bottom: none;
+}
+
+.recipe-nutrition .macros {
+    color: var(--clr-stone-600);
+    font-weight: var(--fw-normal);
+    padding-left: 3.0rem;
+    width: 50%;
 }
