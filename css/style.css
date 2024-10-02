@@ -1,183 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 :root {
-    --clr-white: hsl(0, 0%, 100%);
-    --clr-stone-100: hsl(30, 54%, 90%);
-    --clr-stone-150: hsl(30, 18%, 87%);
-    --clr-stone-600: hsl(30, 10%, 34%);
-    --clr-stone-900: hsl(24, 5%, 18%);
-    --clr-brown-800: hsl(14, 45%, 36%);
-    --clr-rose-800: hsl(332, 51%, 32%);
-    --clr-rose-50: hsl(330, 100%, 98%);
-    --fw-normal: 400;
-    --fw-semi-bold: 600;
-    --fw-bold: 700;
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-stone-100: hsl(30, 54%, 90%);
+	--clr-stone-150: hsl(30, 18%, 87%);
+	--clr-stone-600: hsl(30, 10%, 34%);
+	--clr-stone-900: hsl(24, 5%, 18%);
+	--clr-brown-800: hsl(14, 45%, 36%);
+	--clr-rose-800: hsl(332, 51%, 32%);
+	--clr-rose-50: hsl(330, 100%, 98%);
+	--fw-normal: 400;
+	--fw-semi-bold: 600;
+	--fw-bold: 700;
 }
 
 html {
-    font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 body {
-    font-family: "Outfit", sans-serif;
-    font-size: 1.6rem;
-    font-weight: var(--fw-normal);
-    background-color: var(--clr-stone-100);
-    min-height: 100vh;
-    display: grid;
-    place-content: center;
-}
-
-p, li {    
-    color: var(--clr-stone-600);
-}
-
-.recipe h2 {
-    font-family: "Young Serif", sans-serif;
-    font-weight: 400;
-    font-size: 3.0rem;
-    color: var(--clr-brown-800);
-}
-
-.container {
-    padding-inline: 15rem;
-    margin: 9rem auto 9rem;
-}
-
-.recipe {
-    background-color:  var(--clr-white);
-    width: 74rem;
-    padding: 4.0rem;
-    border-radius: 2.5rem;
-    text-align: left;
-}
-
-.recipe .recipe-image {
-    width: 65.6rem;
-    height: auto;
-    margin: 0 auto;
-}
-
-.recipe .recipe-image img {
-    display: inherit;
-    width: 100%;    
-    border-radius: 1.2rem;
-}
-
-.recipe .recipe-title h1 {
-    font-family: "Young Serif", sans-serif;
-    font-size: 4.0rem;
-    margin-top: 4.0rem;
-    font-weight: 400;
-    color: var(--clr-stone-900);
-}
-
-.recipe .recipe-header p {
-    margin-top: 2.0rem;
-}
-
-.recipe .recipe-preparation-time {
-    background-color: var(--clr-rose-50);
-    border-radius: 2.0rem;
-    padding: 2.0rem;
-    margin: 2.0rem 0;
-}
-
-.recipe .recipe-preparation-time h3 {
-    color: var(--clr-rose-800);
-    padding-bottom: 1.0rem;
-}
-
-.recipe .recipe-preparation-time ul {
-    color: var(--clr-rose-800);
-    padding-left: 2.0rem;
-}
-
-.recipe .recipe-preparation-time li {
-    padding: 0.8rem 0 0.5rem 2.0rem;
-}
-
-.recipe .recipe-preparation-time li::marker {
-    color: var(--clr-rose-800);
-    font-size: 1.2rem;
-}
-
-.recipe-ingredients h2 {
-    padding-bottom: 1.0rem;
-}
-
-.recipe-ingredients ul {
-    padding-left: 2.0rem;
-    padding-bottom: 3.0rem;
-    margin-bottom: 2.0rem;
-    border-bottom: solid var(--clr-stone-150) 1px;
-}
-
-.recipe-ingredients li {
-    padding: 0.8rem 0 0.5rem 2.0rem;
-}
-
-.recipe .recipe-ingredients li::marker {
-    color: var(--clr-brown-800);
-    font-size: 1.2rem;
-}
-
-.recipe-instructions h2 {
-    padding-bottom: 1.0rem;
-}
-
-.recipe-instructions ol {
-    padding-left: 2.5rem;
-    padding-right: 2.0rem;
-    padding-bottom: 3.0rem;
-    margin-bottom: 2.0rem;
-    border-bottom: solid var(--clr-stone-150) 1px;
-}
-
-.recipe-instructions li {
-    padding: 0.8rem 0 0.5rem 2.0rem;
-}
-
-.recipe-instructions li::marker {
-    color: var(--clr-brown-800);
-    font-weight: 700;
-}
-
-.recipe-nutrition h2 {
-    padding-bottom: 1.0rem;
-}
-
-.recipe-nutrition p {
-    padding-bottom: 1.0rem;
-}
-
-.recipe-nutrition table {
-    width: 100%;
-}
-
-.recipe-nutrition th {
-    color: var(--clr-brown-800);
-    font-weight: var(--fw-bold);
-    border-bottom: solid var(--clr-stone-150) 1px;
-    padding: 1.0rem;
-}
-
-.recipe-nutrition #last {
-    border-bottom: none;
-}
-
-.recipe-nutrition .macros {
-    color: var(--clr-stone-600);
-    font-weight: var(--fw-normal);
-    padding-left: 3.0rem;
-    width: 50%;
+	font-family: "Outfit", sans-serif;
+	font-size: 1.6rem;
+	font-weight: var(--fw-normal);
+	background-color: var(--clr-stone-100);
+	min-height: 100vh;
+	display: grid;
+	place-content: center;
 }
